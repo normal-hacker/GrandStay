@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandStay | Luxury Hotels & Resorts</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            GRAND<span>STAY</span>
+            <small>HOTELS & RESORTS</small>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="pages/rooms.html">Rooms</a>
+            <a href="pages/about.html">About</a>
+            <a href="pages/amenities.html">Amenities</a>
+            <a href="pages/contact.html">Contact</a>
+        </nav>
+
+        <a href="pages/booking.html" class="nav-button">Book Your Stay ↗</a>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">WELCOME TO GRANDSTAY</p>
+
+                <h1>
+                    Experience Luxury.<br>
+                    Feel Like <span>Home.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover comfort, elegance and unforgettable
+                    hospitality. Your perfect stay begins here.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="pages/rooms.html" class="primary-button">
+                        Explore Rooms <span>→</span>
+                    </a>
+
+                    <a href="pages/about.html" class="secondary-button">
+                        Discover More
+                    </a>
+                </div>
+
+                <div class="hero-caption">
+                    <span></span>
+                    LUXURY • COMFORT • HOSPITALITY
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+                <span>01 / 03</span>
+                <span>THE ART OF LUXURY LIVING</span>
+            </div>
+
+        </section>
+
+
+        <!-- Booking Search Bar -->
+        <section class="booking-wrapper">
+
+            <form class="booking-bar" action="pages/booking.html" method="GET">
+
+                <div class="booking-field">
+                    <label>CHECK IN</label>
+                    <input type="date" id="homeCheckIn" name="checkIn" required>
+                </div>
+
+                <div class="booking-field">
+                    <label>CHECK OUT</label>
+                    <input type="date" id="homeCheckOut" name="checkOut" required>
+                </div>
+
+                <div class="booking-field">
+                    <label>GUESTS</label>
+                    <select name="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                    </select>
+                </div>
+
+                <div class="booking-field">
+                    <label>ROOM TYPE</label>
+                    <select name="roomType">
+                        <option value="Standard Room">Standard Room</option>
+                        <option value="Deluxe Room" selected>Deluxe Room</option>
+                        <option value="Premium Suite">Premium Suite</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="search-button">
+                    Find Rooms →
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Introduction -->
+        <section class="intro section-padding" id="about">
+
+            <div class="intro-image">
+                <img
+                    src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000"
+                    alt="Luxury hotel exterior">
+                <div class="experience-card">
+                    <strong>5★</strong>
+                    <span>Luxury Experience</span>
+                </div>
+            </div>
+
+            <div class="intro-content">
+                <p class="section-label">ABOUT GRANDSTAY</p>
+
+                <h2>
+                    More Than A Stay,<br>
+                    It's An <span>Experience.</span>
+                </h2>
+
+                <p>
+                    At GrandStay, we believe every journey deserves
+                    something special. From elegant rooms to
+                    thoughtful hospitality, we make every moment
+                    memorable.
+                </p>
+
+                <p>
+                    Whether you are travelling for business or
+                    leisure, experience the perfect combination
+                    of relaxation, comfort and luxury.
+                </p>
+
+                <a href="pages/about.html" class="text-link">
+                    Discover Our Story →
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- Rooms -->
+        <section class="rooms-section section-padding" id="rooms">
+
+            <div class="section-heading">
+                <p class="section-label">OUR ACCOMMODATION</p>
+                <h2>Rooms Designed For <span>Comfort.</span></h2>
+                <p>Find the perfect space for your next stay.</p>
+            </div>
+
+            <div class="room-grid">
+
+                <!-- Standard Room -->
+                <article class="room-card">
+                    <div class="room-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=900"
+                            alt="Standard hotel room">
+                        <span class="room-tag">COMFORT</span>
+                    </div>
+
+                    <div class="room-details">
+                        <div class="room-heading">
+                            <h3>Standard Room</h3>
+                            <span>01</span>
+                        </div>
+
+                        <p>Perfect for solo travellers and couples.</p>
+
+                        <div class="room-footer">
+                            <div class="price">
+                                <strong>₹1,500</strong>
+                                <span>/ night</span>
+                            </div>
+
+                            <a href="pages/booking.html?roomType=Standard+Room">Book Now ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Deluxe Room -->
+                <article class="room-card">
+                    <div class="room-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900"
+                            alt="Deluxe hotel room">
+                        <span class="room-tag">POPULAR</span>
+                    </div>
+
+                    <div class="room-details">
+                        <div class="room-heading">
+                            <h3>Deluxe Room</h3>
+                            <span>02</span>
+                        </div>
+
+                        <p>More space, more comfort, more luxury.</p>
+
+                        <div class="room-footer">
+                            <div class="price">
+                                <strong>₹3,000</strong>
+                                <span>/ night</span>
+                            </div>
+
+                            <a href="pages/booking.html?roomType=Deluxe+Room">Book Now ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Premium Suite -->
+                <article class="room-card">
+                    <div class="room-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900"
+                            alt="Premium hotel suite">
+                        <span class="room-tag">PREMIUM</span>
+                    </div>
+
+                    <div class="room-details">
+                        <div class="room-heading">
+                            <h3>Premium Suite</h3>
+                            <span>03</span>
+                        </div>
+
+                        <p>Exceptional luxury for a special stay.</p>
+
+                        <div class="room-footer">
+                            <div class="price">
+                                <strong>₹5,000</strong>
+                                <span>/ night</span>
+                            </div>
+
+                            <a href="pages/booking.html?roomType=Premium+Suite">Book Now ↗</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Amenities -->
+        <section class="amenities-section" id="amenities">
+
+            <div class="section-heading">
+                <p class="section-label">THE GRANDSTAY EXPERIENCE</p>
+                <h2>Thoughtful Details. <span>Exceptional Comfort.</span></h2>
+            </div>
+
+            <div class="amenities-grid">
+
+                <div class="amenity">
+                    <div class="amenity-icon">✧</div>
+                    <h3>Premium Comfort</h3>
+                    <p>Relax in beautifully designed rooms.</p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">♨</div>
+                    <h3>Room Service</h3>
+                    <p>Hospitality whenever you need it.</p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">⌁</div>
+                    <h3>Free Wi-Fi</h3>
+                    <p>Stay connected throughout your visit.</p>
+                </div>
+
+                <div class="amenity">
+                    <div class="amenity-icon">◇</div>
+                    <h3>Free Parking</h3>
+                    <p>Convenient parking for our guests.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Call To Action -->
+        <section class="cta-section">
+            <div>
+                <p class="section-label">YOUR NEXT JOURNEY STARTS HERE</p>
+                <h2>Make Your Stay <span>Memorable.</span></h2>
+                <p>Discover the comfort you deserve.</p>
+            </div>
+
+            <a href="pages/booking.html" class="primary-button">
+                Reserve Your Room →
+            </a>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    GRAND<span>STAY</span>
+                    <small>HOTELS & RESORTS</small>
+                </a>
+
+                <p>
+                    Bringing comfort, elegance and exceptional
+                    hospitality to every journey.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="pages/rooms.html">Our Rooms</a>
+                <a href="pages/about.html">About Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Information</h3>
+                <a href="pages/amenities.html">Amenities</a>
+                <a href="pages/contact.html">Contact</a>
+                <a href="pages/booking.html">Reservations</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Staff & Contact</h3>
+                <p>support@grandstay.com</p>
+                <p>+91 98765 43210</p>
+                <a href="admin.html" style="color:var(--gold); margin-top:8px;">Admin Dashboard →</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 GrandStay Hotels & Resorts. All rights reserved.</p>
+            <p><a href="admin.html">Staff Portal</a> &bull; Designed for memorable experiences.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        // Set dates on home search bar
+        const today = new Date().toISOString().split('T')[0];
+        const inInput = document.getElementById('homeCheckIn');
+        const outInput = document.getElementById('homeCheckOut');
+
+        inInput.min = today;
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        const dayAfter = new Date();
+        dayAfter.setDate(dayAfter.getDate() + 3);
+
+        inInput.value = tomorrow.toISOString().split('T')[0];
+        outInput.min = inInput.value;
+        outInput.value = dayAfter.toISOString().split('T')[0];
+
+        inInput.addEventListener('change', () => {
+            if (inInput.value) {
+                const next = new Date(inInput.value);
+                next.setDate(next.getDate() + 1);
+                outInput.min = next.toISOString().split('T')[0];
+                if (outInput.value <= inInput.value) {
+                    outInput.value = next.toISOString().split('T')[0];
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

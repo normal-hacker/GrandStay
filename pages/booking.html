@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay | GrandStay</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="../index.html" class="logo">
+        GRAND<span>STAY</span>
+        <small>HOTELS & RESORTS</small>
+    </a>
+
+    <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="about.html">About</a>
+        <a href="amenities.html">Amenities</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="booking.html" class="nav-button active">Book Your Stay ↗</a>
+</header>
+
+<section class="inner-hero">
+    <div>
+        <p class="section-label">RESERVATION</p>
+        <h1>Reserve Your <span>Stay.</span></h1>
+        <p>Your comfortable experience begins with a booking.</p>
+    </div>
+</section>
+
+<section class="booking-page">
+
+    <div class="booking-intro">
+        <p class="section-label">GRANDSTAY RESERVATIONS</p>
+        <h2>Let's Plan Your <span>Stay.</span></h2>
+        <p>Enter your details below to request a hotel reservation.</p>
+    </div>
+
+ <form class="reservation-form"
+      action="http://localhost:8080/book"
+      method="POST">
+        <h3>Guest Information</h3>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="guestName"
+                       placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email"
+                       placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone"
+                       placeholder="Enter phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Number of Guests</label>
+                <select name="guests" required>
+                    <option value="">Select guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                </select>
+            </div>
+
+        </div>
+
+        <h3>Reservation Details</h3>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>Check-in Date</label>
+                <input type="date" name="checkIn" required>
+            </div>
+
+            <div class="form-group">
+                <label>Check-out Date</label>
+                <input type="date" name="checkOut" required>
+            </div>
+
+            <div class="form-group">
+                <label>Room Category</label>
+                <select name="roomType" required>
+                    <option value="">Choose a room</option>
+                    <option value="Standard">Standard Room - ₹1,500</option>
+                    <option value="Deluxe">Deluxe Room - ₹3,000</option>
+                    <option value="Premium">Premium Suite - ₹5,000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Room Number</label>
+                <input type="number" name="roomNumber"
+                       placeholder="Optional room preference">
+            </div>
+
+        </div>
+
+        <div class="form-group full-width">
+            <label>Special Requests</label>
+            <textarea name="requests" rows="5"
+                      placeholder="Any additional requirements?"></textarea>
+        </div>
+
+        <div class="booking-submit">
+            <p>Please verify your details before submitting.</p>
+            <button type="submit" class="primary-button">
+                Submit Reservation →
+            </button>
+        </div>
+
+    </form>
+
+</section>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        <p>© 2026 GrandStay Hotels & Resorts.</p>
+        <a href="../index.html">Back to Home ↑</a>
+    </div>
+</footer>
+
+</body>
+</html>
